@@ -1,0 +1,38 @@
+// get all department 
+GET http://localhost:5000/api/v1/department/getDep
+
+### 
+// single department
+GET http://localhost:5000/api/v1/department/getSingleDepartment/64415e495bcab8e6b7b30343
+
+###
+// create a new department
+POST http://localhost:5000/api/v1/department/createDepartment
+Content-Type: application/json
+
+{
+    "depcode":51,
+    "depname": "USER",
+    "location":"MUMBAI SUB"
+}
+
+###
+// update a department
+PUT http://localhost:5000/api/v1/department/updateDatabase/64415e495bcab8e6b7b30343
+Content-Type: application/json
+
+{
+    "depcode":51,
+    "depname": "USER",
+    "location":"MUMBAI SUB"
+}
+
+###
+// delete a department
+DELETE http://localhost:5000/api/v1/department/delete/64415e495bcab8e6b7b30343
+
+
+
+###
+// get all products
+GET http://localhost:5000/api/v1/products/getProducts
